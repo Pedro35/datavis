@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <title> Gráfico de Barras </title>
+ <!-- Inclusões das bibliotecas JavaScript para o Highcharts -->
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script src="http://code.highcharts.com/highcharts.js"></script>
+ <script>
+ 	$(function() {
+ 		$('#container').highcharts({
+ 			chart: {
+ 				type: 'column'
+ 			},
+ 			title: {
+ 				text: 'Filmes Com Maior Diferença Entre Bilheteria Nacional e Estrangeira (2011)'
+ 			},
+ 			xAxis: {
+ 				categories: ['Variação de Bilheteria (em módulo)']
+ 			},
+ 			yAxis: {
+ 				title: 'Variação'
+ 			},
+ 			series: [{
+ 				name: 'Harry Potter and the Deathly Hallows Part 2',
+ 				data: [566.1]
+ 			}, {
+ 				name: 'Pirates of the Caribbean: On Stranger Tides',
+ 				data: [561.7]
+ 			},
+ 			{
+ 				name: 'Transformers: Dark of the Moon',
+ 				data: [418.4]
+ 			},
+ 			{
+ 				name: 'Kung Fu Panda 2',
+ 				data: [332.6]
+ 			},
+ 			{
+ 				name: 'Smurfs',
+ 				data: [276.9]
+ 			},
+ 			{
+ 				name: 'Mission Impossible 4',
+ 				data: [272.0]
+ 			},
+ 			{
+ 				name: 'Puss In Boots',
+ 				data: [224.7]
+ 			},
+ 			{
+ 				name: 'The Adventures of Tintin',
+ 				data: [219.2]
+ 			},
+ 			{
+ 				name: 'Fast Five',
+ 				data: [206.5]
+ 			},
+ 			{
+ 				name: 'Rio',
+ 				data: [197.4]
+ 			},
+ 			{
+ 				name: 'Car 2',
+ 				data: [168.9]
+ 			},
+ 			{
+ 				name: 'Sherlock Holmes 2',
+ 				data: [149.2]
+ 			},
+ 			{
+ 				name: 'Johnny English Reborn',
+ 				data: [141.3]
+ 			},
+ 			{
+ 				name: 'Twilight: Breaking Dawn',
+ 				data: [139.8]
+ 			},
+ 			{
+ 				name: 'The Help',
+ 				data: [132.2]
+ 			},
+ 			]
+ 		});
+ 	});
+ </script>
+ </head>
+ <body>
+ 	<div id="container" style="width:100%; height:400px;">
+ 	</div>
+ </body>
+</html>
