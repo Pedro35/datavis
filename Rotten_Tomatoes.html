@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <title> Gráfico de Barras </title>
+ <!-- Inclusões das bibliotecas JavaScript para o Highcharts -->
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script src="http://code.highcharts.com/highcharts.js"></script>
+ <script>
+ 	$(function() {
+ 		$('#container').highcharts({
+ 			chart: {
+ 				type: 'column'
+ 			},
+ 			title: {
+ 				text: 'Filmes mais bem avaliados (2007 - 2011)'
+ 			},
+ 			xAxis: {
+ 				categories: ['Nota atribuída (Rotten Tomatoes)']
+ 			},
+ 			yAxis: {
+ 				title: 'Nota atribuída (Rotten Tomatoes)'
+ 			},
+ 			series: [{
+ 				name: 'The Company Men',
+ 				data: [1.32]
+ 			}, {
+ 				name: 'Toy Story 3',
+ 				data: [0.99]
+ 			},
+ 			{
+ 				name: 'How To Train Your Dragon',
+ 				data: [0.98]
+ 			},
+ 			{
+ 				name: 'Up',
+ 				data: [0.98]
+ 			},
+ 			{
+ 				name: 'Ratatouille',
+ 				data: [0.97]
+ 			},
+ 			{
+ 				name: 'The Artist',
+ 				data: [0.97]
+ 			},
+ 			{
+ 				name: 'The Hurt Locker',
+ 				data: [0.97]
+ 			},
+ 			{
+ 				name: 'The Muppets',
+ 				data: [0.97]
+ 			},
+ 			{
+ 				name: 'Harry Potter and the Deathly Hallows Part 2',
+ 				data: [0.96]
+ 			},
+ 			{
+ 				name: 'The Social Network',
+ 				data: [0.96]
+ 			},
+ 			{
+ 				name: 'True Gift',
+ 				data: [0.96]
+ 			},
+ 			{
+ 				name: 'WALL-E',
+ 				data: [0.96]
+ 			},
+ 			{
+ 				name: 'Moneyball',
+ 				data: [0.95]
+ 			},
+ 			{
+ 				name: 'No Country for Old Men',
+ 				data: [0.95]
+ 			},
+ 			{
+ 				name: 'The Kings Speech',
+ 				data: [0.95]
+ 			},
+ 			]
+ 		});
+ 	});
+ </script>
+ </head>
+ <body>
+ 	<div id="container" style="width:100%; height:400px;">
+ 	</div>
+ </body>
+</html>
