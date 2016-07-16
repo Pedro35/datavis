@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />         
+        <title> Gráfico de Barras </title>
+        <!-- Inclusões das bibliotecas JavaScript para o Highcharts -->    
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script> 
+        <script src="http://code.highcharts.com/modules/data.js"></script>        
+    </head>     
+    <body>
+        <script>
+            $(function () {
+                $('#container').highcharts({
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: 'Worldwide Box Office'
+                        },
+                        xAxis: {
+                            categories: ['Worldwide', 'Domestic', 'Foreign > Brazil', 'Foreign > UK']
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Income'
+                            }
+                        },
+                        series: [{
+                            name: 'Cloud Atlas',
+                            data: [130482868, 27108272, 4931137, 2524295]
+                        }, {
+                            name: 'City of God',
+                            data: [30641770, 7564459, 10300000, 3819027]
+                        }, {
+                            name: 'Interstellar',
+                            data: [675120017, 188020017, 5059875, 31379615]
+                        }, {
+                            name: 'Finding Nemo',
+                            data: [936743261, 380843261, 0, 67117404]
+                        }, {
+                            name: 'Dirty Dancing',
+                            data: [213954274, 63954274, 0, 0] 
+                    }]
+                });
+                $('#container2').highcharts({
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: '1st Week Box Office'
+                        },
+                        xAxis: {
+                            categories: ['Movies']
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Income'
+                            }
+                        },
+                        series: [{
+                            name: 'Cloud Atlas',
+                            data: [13012429]
+                        }, {
+                            name: 'City of God',
+                            data: [155660]
+                        }, {
+                            name: 'Interstellar',
+                            data: [2151453]
+                        }, {
+                            name: 'Finding Nemo',
+                            data: [97454140]
+                        }, {
+                            name: 'Dirty Dancing',
+                            data: [6358688] 
+                    }]
+                });
+            });
+        </script>
+        <div id="container" style="width:100%; height:400px;"></div>
+        <div id="container2" style="width:100%; height:400px;"></div>     
+    </body> 
+</html>
